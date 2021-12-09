@@ -1,0 +1,103 @@
+// margin
+// margin right
+@for $i from 0 to 6 {
+  .mr-#{$i} {
+    margin-right: $i / 2 + rem !important;
+  }
+}
+
+// margin left
+@for $i from 0 to 6 {
+  .ml-#{$i} {
+    margin-left: $i / 2 + rem !important;
+  }
+}
+
+// margin bottom
+@for $i from 0 to 6 {
+  .mb-#{$i} {
+    margin-bottom: $i / 2 + rem !important;
+  }
+}
+
+// margin top
+@for $i from 0 to 6 {
+  .mt-#{$i} {
+    margin-top: $i / 2 + rem !important;
+  }
+}
+
+// margin x
+@for $i from 0 to 6 {
+  .mx-#{$i} {
+    margin-left: $i / 2 + rem !important;
+    margin-right: $i / 2 + rem !important;
+  }
+}
+
+// margin y
+@for $i from 0 to 6 {
+  .my-#{$i} {
+    margin-top: $i / 2 + rem !important;
+    margin-bottom: $i / 2 + rem !important;
+  }
+}
+
+// margin all
+@for $i from 0 to 6 {
+  .m-#{$i} {
+    margin: $i / 2 + rem !important;
+  }
+}
+
+// padding
+// padding right
+@for $i from 0 to 6 {
+  .pr-#{$i} {
+    padding-right: $i / 2 + rem !important;
+  }
+}
+
+// padding left
+@for $i from 0 to 6 {
+  .pl-#{$i} {
+    padding-left: $i / 2 + rem !important;
+  }
+}
+
+// padding bottom
+@for $i from 0 to 6 {
+  .pb-#{$i} {
+    padding-bottom: $i / 2 + rem !important;
+  }
+}
+
+// padding top
+@for $i from 0 to 6 {
+  .pt-#{$i} {
+    padding-top: $i / 2 + rem !important;
+  }
+}
+
+// padding x
+@for $i from 0 to 6 {
+  .px-#{$i} {
+    padding-left: $i / 2 + rem !important;
+    padding-right: $i / 2 + rem !important;
+  }
+}
+
+// padding y
+@for $i from 0 to 6 {
+  .py-#{$i} {
+    padding-top: $i / 2 + rem !important;
+    padding-bottom: $i / 2 + rem !important;
+  }
+}
+
+// padding all
+@for $i from 0 to 6 {
+  .p-#{$i} {
+    padding: $i / 2 + rem !important;
+  }
+}
