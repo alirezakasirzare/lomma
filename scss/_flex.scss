@@ -1,0 +1,27 @@
+// justify content
+@each $value in $justify-content-state {
+  .flex-j-#{$value} {
+    justify-content: $value !important;
+  }
+}
+
+// align content
+@each $value in $align-items-state {
+  .flex-a-#{$value} {
+    align-items: $value !important;
+  }
+}
+
+// direction
+@each $value in $direction-state {
+  .flex-dir-#{$value} {
+    flex-direction: $value !important;
+  }
+}
+
+// center
+.flex-center {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}

@@ -51,3 +51,11 @@ $display: none, block, inline, inline-block, flex, inline-flex, grid,
 
 // positions
 $position: fixed, sticky, relative, absolute;
+
+// flex
+$justify-content-state: start, center, end, space-around, space-between,
+  space-evenly;
+
+$align-items-state: start, center, end, stretch;
+
+$direction-state: row, row-reverse, column, column-reverse;
