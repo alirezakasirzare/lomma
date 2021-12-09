@@ -1,4 +1,12 @@
+// font
 @font-face {
   font-family: rubik;
   src: url(./font/Rubik-Italic-VariableFont_wght.ttf);
+}
+
+// display
+@each $value in $display {
+  .d-#{$value} {
+    display: $value !important;
+  }
 }
