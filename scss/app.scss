@@ -3,7 +3,10 @@
 @import "./_varibles";
 @import "./_functions";
 @import "./_mixins";
-@import "./basic";
+@import "./_basic";
 
 // spacing
-@import "./spacing";
+@import "./_spacing";
+
+// colors
+@import "./_colors";
