@@ -1,6 +1,6 @@
 // basing things
-@import "./_reboot";
 @import "./_varibles";
+@import "./_reboot";
 @import "./_functions";
 @import "./_mixins";
 @import "./_basic";
@@ -10,3 +10,6 @@
 
 // colors
 @import "./_colors";
+
+// typography
+@import "./_typography";

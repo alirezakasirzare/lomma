@@ -20,6 +20,7 @@ Document
 *::before,
 *::after {
   box-sizing: border-box; /* 1 */
+  text-align: justify;
 }
 html {
   font-family: sans-serif; /* 2 */
@@ -56,7 +57,7 @@ Body
 */
 body {
   margin: 0; /* 1 */
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  font-family: rubik, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol";
   font-size: 1rem;
@@ -178,14 +179,12 @@ sup {
 Links
 */
 a {
-  color: #007bff;
-  text-decoration: none;
+  color: map-get($primary, "md");
+  text-decoration: underline map-get($primary, "sm") 2px;
   background-color: transparent; /* Remove the gray background on active links in IE 10. */
-  -webkit-text-decoration-skip: objects; /* Remove gaps in links underline in iOS 8+ and Safari 8+. */
 }
 a:hover {
-  color: #0056b3;
-  text-decoration: underline;
+  color: map-get($primary, "lg");
 }
 /*
 And undo these styles for placeholder links/named anchors (without href) which have not been made explicitly keyboard-focusable (without tabindex). It would be more straightforward to just use a[href] in previous block, but that causes specificity issues in many other styles that are too complex to fix.

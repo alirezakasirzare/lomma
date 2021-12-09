@@ -1,0 +1,46 @@
+// heading
+// h1
+h1 {
+  @include typography(2rem, bold, 0.02rem, 2.5rem);
+}
+
+// h2
+h2 {
+  @include typography(1.8rem, bold, 0.02rem, 2.5rem);
+}
+
+// h3
+h3 {
+  @include typography(1.6rem, bold, 0.02rem, 2.3rem);
+}
+
+// h4
+h4 {
+  @include typography(1.4rem, bold, 0.02rem, 2rem);
+}
+
+// h5
+h5 {
+  @include typography(1.2rem, bold, 0.02rem, 1.7rem);
+}
+
+// paragraph lead
+p.lead {
+  @include typography(1.7rem, normal, 0.03rem, 2.2rem);
+}
+
+// paragraph text and span and link
+p:not(.lead),
+a,
+span {
+  @include typography(1.5rem, normal, 0.01rem, 1.8rem);
+}
+
+span,
+a {
+  margin: 0;
+}
+
+a {
+  color: map-get($primary, "md");
+}
