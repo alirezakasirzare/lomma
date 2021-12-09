@@ -10,3 +10,38 @@
     display: $value !important;
   }
 }
+
+// position
+@each $value in $position {
+  .p-#{$value} {
+    position: $value !important;
+  }
+}
+
+// top
+@for $i from 0 to 5 {
+  .top-#{$i*25} {
+    top: $i * 25% !important;
+  }
+}
+
+// left
+@for $i from 0 to 5 {
+  .left-#{$i*25} {
+    left: $i * 25% !important;
+  }
+}
+
+// bottom
+@for $i from 0 to 5 {
+  .bottom-#{$i*25} {
+    bottom: $i * 25% !important;
+  }
+}
+
+// right
+@for $i from 0 to 5 {
+  .right-#{$i*25} {
+    right: $i * 25% !important;
+  }
+}
