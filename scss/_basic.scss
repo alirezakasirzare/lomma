@@ -45,3 +45,18 @@
     right: parse-percent25($i) !important;
   }
 }
+
+// float
+.float-r {
+  float: right;
+}
+
+.float-l {
+  float: right;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
