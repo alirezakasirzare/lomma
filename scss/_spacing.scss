@@ -50,6 +50,20 @@
   }
 }
 
+// margin auto
+.mx-auto {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.mr-auto {
+  margin-right: auto;
+}
+
 // padding
 // padding right
 @for $i from 0 to 6 {
