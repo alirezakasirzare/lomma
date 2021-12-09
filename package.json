@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass": "node-sass scss/ -w -o dist/ -i --source-map dist/ --source-map-embed true"
   },
   "keywords": [],
   "author": "Alireza Kasirzareh",
