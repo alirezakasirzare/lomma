@@ -1,0 +1,13 @@
+// width
+@for $i from 0 to 5 {
+  .w-#{name-parse-percent25($i)} {
+    width: parse-percent25($i) !important;
+  }
+}
+
+// height
+@for $i from 0 to 5 {
+  .h-#{name-parse-percent25($i)} {
+    height: parse-percent25($i) !important;
+  }
+}

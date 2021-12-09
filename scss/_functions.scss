@@ -1,0 +1,8 @@
+// percent
+@function parse-percent25($i) {
+  @return $i * 25%;
+}
+
+@function name-parse-percent25($i) {
+  @return $i * 25;
+}

@@ -20,28 +20,28 @@
 
 // top
 @for $i from 0 to 5 {
-  .top-#{$i*25} {
-    top: $i * 25% !important;
+  .top-#{name-parse-percent25($i)} {
+    top: parse-percent25($i) !important;
   }
 }
 
 // left
 @for $i from 0 to 5 {
-  .left-#{$i*25} {
-    left: $i * 25% !important;
+  .left-#{name-parse-percent25($i)} {
+    left: parse-percent25($i) !important;
   }
 }
 
 // bottom
 @for $i from 0 to 5 {
-  .bottom-#{$i*25} {
-    bottom: $i * 25% !important;
+  .bottom-#{name-parse-percent25($i)} {
+    bottom: parse-percent25($i) !important;
   }
 }
 
 // right
 @for $i from 0 to 5 {
-  .right-#{$i*25} {
-    right: $i * 25% !important;
+  .right-#{name-parse-percent25($i)} {
+    right: parse-percent25($i) !important;
   }
 }
