@@ -41,6 +41,15 @@ $info: (
   "xl": #01579b,
 );
 
+$colors: (
+  "danger": $danger,
+  "primary": $primary,
+  "info": $info,
+  "success": $success,
+  "secondary": $secondary,
+  "warning": $warning,
+);
+
 $dark: #000;
 
 $light: #fff;
