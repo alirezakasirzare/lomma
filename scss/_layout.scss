@@ -1,4 +1,4 @@
-// grid - layout
+// grid - layout - mobile and more
 @for $layout-value from 1 through 12 {
   .layout-#{$layout-value} {
     display: grid !important;
@@ -7,17 +7,75 @@
   }
 }
 
-// grid column
+// grid - layout - tablet and more
+@include responsive("tablet") {
+  @for $layout-value from 1 through 12 {
+    .layout-t-#{$layout-value} {
+      display: grid !important;
+      grid-gap: 5px !important;
+      grid-template-columns: repeat($layout-value, 1fr) !important;
+    }
+  }
+}
+
+// grid - layout - desktop and more
+@include responsive("desktop") {
+  @for $layout-value from 1 through 12 {
+    .layout-d-#{$layout-value} {
+      display: grid !important;
+      grid-gap: 5px !important;
+      grid-template-columns: repeat($layout-value, 1fr) !important;
+    }
+  }
+}
+
+// grid column mobile and more
 @for $col-value from 1 through 12 {
   .col-#{$col-value} {
     grid-column: $col-value span !important;
   }
 }
 
-// grid row
+// grid column tablet and more
+@include responsive("tablet") {
+  @for $col-value from 1 through 12 {
+    .col-t-#{$col-value} {
+      grid-column: $col-value span !important;
+    }
+  }
+}
+
+// grid column desktop and more
+@include responsive("desktop") {
+  @for $col-value from 1 through 12 {
+    .col-d-#{$col-value} {
+      grid-column: $col-value span !important;
+    }
+  }
+}
+
+// grid row mobile and more
 @for $row-value from 1 through 6 {
   .row-#{$row-value} {
     grid-row: $row-value span !important;
+  }
+}
+
+// grid row tablet and more
+@include responsive("tablet") {
+  @for $row-value from 1 through 6 {
+    .row-t-#{$row-value} {
+      grid-row: $row-value span !important;
+    }
+  }
+}
+
+// grid row desktop and more
+@include responsive("desktop") {
+  @for $row-value from 1 through 6 {
+    .row-d-#{$row-value} {
+      grid-row: $row-value span !important;
+    }
   }
 }
 

@@ -68,3 +68,7 @@ $justify-content-state: start, center, end, space-around, space-between,
 $align-items-state: start, center, end, stretch;
 
 $direction-state: row, row-reverse, column, column-reverse;
+
+// layout size responsive
+$tablet: 768px;
+$desktop: 1023px;
