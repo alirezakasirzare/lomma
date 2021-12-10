@@ -1,169 +1,22 @@
-// background
-// background danger
-@each $key, $value in $danger {
-  @if ($key == "md") {
-    .bg-danger,
-    .bg-danger-md {
-      background-color: $value !important;
-    }
-  } @else {
-    .bg-danger-#{$key} {
-      background-color: $value !important;
-    }
-  }
-}
-
-// background info
-@each $key, $value in $info {
-  @if ($key == "md") {
-    .bg-info,
-    .bg-info-md {
-      background-color: $value !important;
-    }
-  } @else {
-    .bg-info-#{$key} {
-      background-color: $value !important;
-    }
-  }
-}
-
-// background primary
-@each $key, $value in $primary {
-  @if ($key == "md") {
-    .bg-primary,
-    .bg-primary-md {
-      background-color: $value !important;
-    }
-  } @else {
-    .bg-primary-#{$key} {
-      background-color: $value !important;
-    }
-  }
-}
-
-// background warning
-@each $key, $value in $warning {
-  @if ($key == "md") {
-    .bg-warning,
-    .bg-warning-md {
-      background-color: $value !important;
-    }
-  } @else {
-    .bg-warning-#{$key} {
-      background-color: $value !important;
-    }
-  }
-}
-
-// background success
-@each $key, $value in $success {
-  @if ($key == "md") {
-    .bg-success,
-    .bg-success-md {
-      background-color: $value !important;
-    }
-  } @else {
-    .bg-success-#{$key} {
-      background-color: $value !important;
-    }
-  }
-}
-
-// background secondary
-@each $key, $value in $secondary {
-  @if ($key == "md") {
-    .bg-secondary,
-    .bg-secondary-md {
-      background-color: $value !important;
-    }
-  } @else {
-    .bg-secondary-#{$key} {
-      background-color: $value !important;
-    }
-  }
-}
-
+// background color
 // text color
-// text danger
-@each $key, $value in $danger {
-  @if ($key == "md") {
-    .text-danger,
-    .text-danger-md {
-      color: $value !important;
+@each $color-name, $color-value in $colors {
+  @each $color-state-name, $color-state-value in $color-value {
+    .bg-#{$color-name}-#{$color-state-name} {
+      background-color: $color-state-value !important;
     }
-  } @else {
-    .text-danger-#{$key} {
-      color: $value !important;
-    }
-  }
-}
 
-// text primary
-@each $key, $value in $primary {
-  @if ($key == "md") {
-    .text-primary,
-    .text-primary-md {
-      color: $value !important;
+    .text-#{$color-name}-#{$color-state-name} {
+      color: $color-state-value !important;
     }
-  } @else {
-    .text-primary-#{$key} {
-      color: $value !important;
-    }
-  }
-}
 
-// text success
-@each $key, $value in $success {
-  @if ($key == "md") {
-    .text-success,
-    .text-success-md {
-      color: $value !important;
-    }
-  } @else {
-    .text-success-#{$key} {
-      color: $value !important;
-    }
-  }
-}
-
-// text warning
-@each $key, $value in $warning {
-  @if ($key == "md") {
-    .text-warning,
-    .text-warning-md {
-      color: $value !important;
-    }
-  } @else {
-    .text-warning-#{$key} {
-      color: $value !important;
-    }
-  }
-}
-
-// text secondary
-@each $key, $value in $secondary {
-  @if ($key == "md") {
-    .text-secondary,
-    .text-secondary-md {
-      color: $value !important;
-    }
-  } @else {
-    .text-secondary-#{$key} {
-      color: $value !important;
-    }
-  }
-}
-
-// text info
-@each $key, $value in $info {
-  @if ($key == "md") {
-    .text-info,
-    .text-info-md {
-      color: $value !important;
-    }
-  } @else {
-    .text-info-#{$key} {
-      color: $value !important;
+    @if $color-state-name == "md" {
+      .bg-#{$color-name} {
+        background-color: $color-state-value !important;
+      }
+      .text-#{$color-name} {
+        color: $color-state-value !important;
+      }
     }
   }
 }
