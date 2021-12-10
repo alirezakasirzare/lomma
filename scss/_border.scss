@@ -27,13 +27,12 @@
 
 // rounded
 @for $i from 0 to 4 {
-  @if $i == 2 {
-    .rounded-#{$i},
+  .rounded-#{$i} {
+    border-radius: $i * 2px !important;
+  }
+
+  @if ($i == 2) {
     .rounded {
-      border-radius: $i * 2px !important;
-    }
-  } @else {
-    .rounded-#{$i} {
       border-radius: $i * 2px !important;
     }
   }
