@@ -2,6 +2,8 @@
 
 ## looma is a css freamwork without any javascript code
 
+### looma is very fast because looma dont have any components !
+
 _features_
 
 1. backgroud and text color
